@@ -1,0 +1,78 @@
+
+
+<head>
+<meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<link rel="stylesheet" type="text/css" href="../stylesheet.css">
+</head>
+
+<SCRIPT LANGUAGE="JavaScript">
+var current = 0;
+
+function next(){ // forward one image
+if(document.formname.slide[current+1]){
+document.images.show.src = document.formname.slide[current+1].value;
+document.formname.slide.selectedIndex = ++current;}
+else{first();}}
+
+function previous(){ // back on image
+if((current-1) >= 0){
+document.images.show.src = document.formname.slide[current-1].value;
+document.formname.slide.selectedIndex= --current;}
+else{last();}}
+
+function first(){ // jump to first image
+current=0;
+document.images.show.src = document.formname.slide[0].value;
+document.formname.slide.selectedIndex=0;}
+
+function last(){ // this is jump to last image
+current=(document.formname.slide.length-1);
+document.images.show.src = document.formname.slide[current].value;
+document.formname.slide.selectedIndex=current;}
+
+function ap(text){ // this controls the auto-play and/or auto-stop
+document.formname.slidebutton.value=(text == "Stop") ? "Start" : "Stop";
+rotate();}
+
+function change(){ // this is for the pulldown menu
+current=document.formname.slide.selectedIndex;
+document.images.show.src = document.formname.slide[current].value;}
+
+function rotate() {
+if (document.formname.slidebutton.value == "Stop") {
+current = (current == document.formname.slide.length-1) ? 0 : current+1;
+document.images.show.src = document.formname.slide[current].value;
+document.formname.slide.selectedIndex = current;
+window.setTimeout("rotate()", 5000);}}
+//  End --></SCRIPT>
+
+
+<form name="formname">
+<table cellspacing="1" cellpadding="4" bgcolor="#000000">
+  <tr>
+    <td align="center" bgcolor="silver"><b>New Years Eve Party 2004: Photo album</b></td>
+  </tr>
+  <tr>
+    <td align="right" bgcolor="white"><a href="http://pg.photos.yahoo.com/ph/kallol/slideshow?.dir=/a202&.src=ph" target="_blank">View another Slideshow</a></td>
+  </tr>
+  <tr>
+    <td align="center" bgcolor="#C3DAF9" width="500" height="400"><img height="400" src="1.jpg" name="show"></td>
+  </tr>
+  <tr>
+    <td align="center" bgcolor="silver"><select name="slide" onchange="change();" size="1">
+        <option value="1.jpg" selected="1">Photo 1</option>        <option value="2.jpg">Photo 2</option>        <option value="3.jpg" >Photo 3</option>        <option value="4.jpg">Photo 4</option>		<option value="5.jpg">Photo 5</option>		<option value="6.jpg">Photo 6</option>		<option value="7.jpg">Photo 7</option>        <option value="8.jpg">Photo 8</option>        <option value="9.jpg">Photo 9</option>        <option value="10.jpg">Photo 10</option>        <option value="11.jpg">Photo 11</option>        <option value="12.jpg">Photo 12</option>        <option value="13.jpg">Photo 13</option>        <option value="14.jpg">Photo 14</option>        <option value="15.jpg">Photo 15</option>        <option value="16.jpg">Photo 16</option>        <option value="17.jpg" >Photo 17</option>        <option value="18.jpg">Photo 18</option>		<option value="19.jpg">Photo 19</option>		<option value="20.jpg">Photo 20</option>		<option value="21.jpg">Photo 21</option>        <option value="22.jpg">Photo 22</option>        <option value="23.jpg">Photo 23</option>        <option value="24.jpg">Photo 24</option>        <option value="25.jpg">Photo 25</option>        <option value="26.jpg">Photo 26</option>        <option value="27.jpg">Photo 27</option>        <option value="28.jpg">Photo 28</option>        <option value="29.jpg">Photo 29</option>        <option value="30.jpg">Photo 30</option>        <option value="31.jpg" >Photo 31</option>        <option value="32.jpg" >Photo 32</option>        <option value="33.jpg" >Photo 33</option>        <option value="34.jpg">Photo 34</option>		<option value="35.jpg">Photo 35</option>		<option value="36.jpg">Photo 36</option>		<option value="37.jpg">Photo 37</option>        <option value="38.jpg">Photo 38</option>        <option value="39.jpg">Photo 39</option>        <option value="40.jpg">Photo 40</option>        <option value="41.jpg">Photo 41</option>        <option value="42.jpg">Photo 42</option>        <option value="43.jpg">Photo 43</option>        <option value="44.jpg">Photo 44</option>        <option value="45.jpg">Photo 45</option>        <option value="46.jpg">Photo 46</option>        <option value="47.jpg" >Photo 47</option>        <option value="48.jpg">Photo 48</option>		<option value="49.jpg">Photo 49</option>		<option value="50.jpg">Photo 50</option>		<option value="51.jpg">Photo 51</option>        <option value="52.jpg">Photo 52</option>        <option value="53.jpg">Photo 53</option>        <option value="54.jpg">Photo 54</option>        <option value="55.jpg">Photo 55</option>        <option value="56.jpg">Photo 56</option>        <option value="57.jpg">Photo 57</option>        <option value="58.jpg">Photo 58</option>        <option value="59.jpg">Photo 59</option>		<option value="60.jpg">Photo 60</option>
+		<option value="61.jpg">Photo 61</option>        <option value="62.jpg">Photo 62</option>        <option value="63.jpg">Photo 63</option>        <option value="64.jpg">Photo 64</option>        <option value="65.jpg">Photo 65</option>        <option value="66.jpg">Photo 66</option>        <option value="67.jpg">Photo 67</option>        <option value="68.jpg">Photo 68</option>        <option value="69.jpg">Photo 69</option>		<option value="70.jpg">Photo 70</option>
+		<option value="71.jpg">Photo 71</option>        <option value="72.jpg">Photo 72</option>        <option value="73.jpg">Photo 73</option>        <option value="74.jpg">Photo 74</option>        <option value="75.jpg">Photo 75</option>        <option value="76.jpg">Photo 76</option>        <option value="77.jpg">Photo 77</option>    
+      </select></td>
+  </tr>
+  <tr>
+    <td align="center" bgcolor="#cccccc"><input type="button" onclick="first();" value="|&lt;&lt;" title="Jump to beginning" style="border-style: ridge; border-width: 5">
+      <input type="button" onclick="previous();" value="&lt;&lt;" title="Last Picture" style="border-style: ridge; border-width: 5">
+      <input type="button" name="slidebutton" onclick="ap(this.value);" value="Start" title="AutoPlay" style="border-style: ridge; border-width: 5">
+      <input type="button" onclick="next();" value="&gt;&gt;" title="Next Picture" style="border-style: ridge; border-width: 5">
+      <input type="button" onclick="last();" value="&gt;&gt;|" title="Jump to end" style="border-style: ridge; border-width: 5"></td>
+  </tr>
+</table>
+</form>
+

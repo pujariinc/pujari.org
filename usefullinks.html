@@ -1,0 +1,533 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<link rel="stylesheet" type="text/css" href="Scripts/CSS/mastercss.css"> </link>
+<script type="text/javascript" src="jquery-1.2.2.pack.js"></script>
+<script type="text/javascript" src="ddaccordion.js"> </script>
+<script type="text/javascript" src="menucontrol.js">menucontrol.js> </script>
+<script src="Scripts/AC_RunActiveContent.js" type="text/javascript"></script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="Shortcut Icon" href="/pujariicon.ico">
+<title>:: Pujari - Bengali Community's Choice of Cultural Abode, Atlanta, GA ::</title>
+<meta name="" content="atlanta, georgia, bengali, cultural, bengali organization, puja, pooja, durga, saraswati, laxmi, lakshmi, rabindra sangeet, picnic, bengali community, bengali association, visa, immigration, driver's license, best schools, US schools comparison, US Universities, tax, credit building, credit history, travel, US citizenship, green card, services at India, community events, baisakhi, poila baishakhi, USA, apartment guide, US cities cost of living, salary comparison, new year's party, new year's eve, celebration, community participation, natok, dance drama, music kobita, drawing competetion, kid's program, bengali adda" />
+<link rel="Shortcut Icon" href="/pujariicon.ico">
+<style type="text/css"> 
+/* place css fixes for all versions of IE in this conditional comment */
+.twoColElsLtHdr #sidebar1 { padding-top: 30px; }
+.twoColElsLtHdr #mainContent { zoom: 1; padding-top: 15px; }
+html {scrollbar-base-color: #AF8354}
+/* the above proprietary zoom property gives IE the hasLayout it needs to avoid several bugs */
+</style>
+
+<style type="text/css">
+
+
+ 
+<!-- 
+body  {
+	font: 100% Verdana, Arial, Helvetica, sans-serif;
+	background: #666666;
+	margin: 0; /* it's good practice to zero the margin and padding of the body element to account for differing browser defaults */
+	padding: 0;
+	text-align: center; /* this centers the container in IE 5* browsers. The text is then set to the left aligned default in the #container selector */
+	color: #BFA45F;
+	background-image: url(images/YallowBack.jpg);
+	background-color: #efd17b;
+}
+.thrColFixHdr #container {
+	width: 1000px; /* this overrides the text-align: center on the body element. */
+	margin-top: 0;
+	margin-right: auto;
+	margin-bottom: 0;
+	margin-left: auto;
+	background-image: url(images/MainBack.jpg);
+	text-align: left;
+	border-bottom-width: 4px;
+	border-bottom-style: double;
+	border-bottom-color: #57170D;
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color: #69260C;
+} 
+.p2 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	line-height: 25px;
+	padding-right: 20px;
+}
+.p3 {
+	font-family: Garamond;
+	font-size: 14px;
+	line-height: 18px;
+	font-weight: bold;
+	font-variant: small-caps;
+	color: #99CC99;
+	padding-right: 2px;
+}
+.thrColFixHdr #header {
+	padding-top: 0;
+	padding-bottom: 0;
+	width: 1000px;
+	margin-top: 0px;
+	margin-right: auto;
+	margin-bottom: 0px;
+	margin-left: auto;
+} 
+p {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	padding-right: 10px;
+	padding-left: 5px;
+}
+.thrColFixHdr #header h1 {
+	margin: 0; /* zeroing the margin of the last element in the #header div will avoid margin collapse - an unexplainable space between divs. If the div has a border around it, this is not necessary as that also avoids the margin collapse */
+	padding: 10px 0; /* using padding instead of margin will allow you to keep the element away from the edges of the div */
+	font-size: 14px;
+}
+#mainContent #menuBar {
+	margin-top: 0px;
+	margin-right: auto;
+	margin-bottom: 0px;
+	margin-left: auto;
+	border-top-width: 8px;
+	border-top-style: dotted;
+	border-top-color: #924639;
+}
+.thrColFixHdr #sidebar1 {
+	float: left; /* since this element is floated, a width must be given */
+	width: 170px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #EDD279;
+	padding-top: 15px;
+	padding-right: 10px;
+	padding-bottom: 15px;
+	padding-left: 20px;
+	position: static;
+	clip: rect(auto,auto,auto,auto);
+	top: 120px;
+	left: 0px;
+}
+.thrColFixHdr #sidebar2 {
+	float: right;
+	font-size: 12px;
+	color: #F5E6B4;
+	font-family: Arial, Helvetica, sans-serif;
+	position: static;
+	top: 120px;
+	left: 1000px;
+	padding-right: 15px;
+	margin-left: 20px;
+}
+.thrColFixHdr #mainContent {
+	font-size: 15px;
+	color: #460500;
+	margin-top: 0;
+	margin-right: 50px;
+	margin-bottom: 0;
+	margin-left: 235px;
+	line-height: 22px;
+	padding-right: 10px;
+} 
+.thrColFixHdr #footer {
+	font-size: 14px;
+	color: #000000;
+	font-family: "trebuchet MS", "Lucida Sans", arial;
+	padding-top: 20;
+	padding-bottom: 10;
+	background-image: url(images/footer.jpg);
+	margin-bottom: auto;
+	text-align: center;
+	padding-left: 150px;
+	font-weight: normal;
+} 
+#centralcontent {
+	line-height: 25px;
+	color: #CC3300;
+	overflow: auto;
+	height: 500;
+}
+.thrColFixHdr #footer p {
+	margin: 0; /* zeroing the margins of the first element in the footer will avoid the possibility of margin collapse - a space between divs */
+	padding: 10px 0; /* padding on this element will create space, just as the the margin would have, without the margin collapse issue */
+}
+.fltrt { /* this class can be used to float an element right in your page. The floated element must precede the element it should be next to on the page. */
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { /* this class can be used to float an element left in your page */
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat { /* this class should be placed on a div or break element and should be the final element before the close of a container that should fully contain a float */
+	clear:both;
+    height:0;
+    font-size: 1px;
+    line-height: 0px;
+}
+--> 
+</style>
+<!--[if IE 5]>
+<style type="text/css"> 
+/* place css box model fixes for IE 5* in this conditional comment */
+.thrColFixHdr #sidebar1 { width: 180px; }
+.thrColFixHdr #sidebar2 { width: 190px; }
+</style>
+<![endif]-->
+<!--[if IE]>
+<style type="text/css"> 
+/* place css fixes for all versions of IE in this conditional comment */
+.thrColFixHdr #sidebar2, .thrColFixHdr #sidebar1 { padding-top: 30px; }
+.thrColFixHdr #mainContent { zoom: 1; }
+/* the above proprietary zoom property gives IE the hasLayout it needs to avoid several bugs */
+</style>
+<![endif]-->
+<script src="SpryAssets/SpryMenuBar.js" type="text/javascript"></script>
+
+<style type="text/css">
+<!--
+.style10 {
+	color: #FFCC00;
+	font-size: 18px;
+	font-family: Ravie, Raavi, QuigleyWiggly;
+}
+a:link {
+	text-decoration: none;
+	color: #000000;
+}
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+	color: #FFFFCC;
+}
+a:active {
+	text-decoration: none;
+}
+.style11 {
+	color: #BF9F70
+}
+.style14 {font-size: 22px}
+.style15 {
+	font-size: small;
+}
+body,td,th {
+	font-family: lucida, Trebuchet MS, verdana, arial, Lucida Sans Unicode;
+	font-size: 14%;
+	font-weight: bold;
+}
+a {
+	font-family: lucida, "Trebuchet MS", verdana, arial, "Lucida Sans Unicode";
+	font-size: 14px;
+	font-weight: normal;
+	color: #000000;
+}
+.style16 {font-size: 15px}
+.style17 {color: #C1A172}
+.style20 {
+	color: #6C170D;
+	font-size: 15px;
+}
+.style21 {font-family: lucida, "Trebuchet MS", verdana, arial, "Lucida Sans Unicode"; font-weight: bold; font-size: 14px; color: #6C170D; }
+body {
+	background-image: url(images/YallowBack.jpg);
+	margin-top: 0px;
+}
+.style22 {
+	font-family: Ravie, Raavi, QuigleyWiggly;
+	font-size: 16px;
+	color: #FFFFFF;
+}
+.style25 {
+	font-size: 14px;
+	line-height: 0.3455;
+	color: #FFCC33;
+}
+.style26 {font-size: 18px; }
+#usefullinks {
+	background-color: #D5D696;
+	height: 400px;
+	width: 625px;
+	margin-left: 15px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	overflow: auto;
+	padding: 15px;
+	border: 6px double #C0712C;
+}
+-->
+</style>
+<script src="Scripts/AC_RunActiveContent.js" type="text/javascript"></script>
+<script src="anjali.html" type="text/javascript"></script>
+<script type="text/javascript">
+<!--
+function MM_effectAppearFade(targetElement, duration, from, to, toggle)
+{
+	Spry.Effect.DoFade(targetElement, {duration: duration, from: from, to: to, toggle: toggle});
+}
+//-->
+</script>
+
+</head>
+
+<body class="thrColFixHdr">
+<div id="header">
+  <div align="center">
+    <script type="text/javascript">
+AC_FL_RunContent( 'codebase','http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,28,0','width','1000','height','150','title','Pujari','src','allswfs/header2','quality','autolow','pluginspage','http://www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash','movie','allswfs/header2' ); //end AC code
+</script><noscript><object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,28,0" width="1000" height="150" title="Pujari">
+      <param name="movie" value="allswfs/header2.swf" />
+      <param name="quality" value="autolow" />
+      <embed src="allswfs/header2.swf" quality="autolow" pluginspage="http://www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash" type="application/x-shockwave-flash" width="1000" height="150"></embed>
+    </object>
+  </noscript></div>
+</div>
+
+<div id="container"><div id="sidebar1">
+  <!-- Menu Code Starts Here -->
+<div class="glossymenu">
+<a class="menuitem" href="index.html">Home</a>
+
+<a class="menuitem submenuheader" href="anjali.html">Events</a>
+<div class="submenu">
+	<ul>
+	<li><a href="nextevent.html">Next Event</a></li>
+	<li><a href="eventcalendar.html">Event Calendar</a></li>
+	<li><a href="eventarchive.html">Event Archive</a></li>
+	</ul>
+</div>
+<a class="menuitem submenuheader" href="Pages/member.html" >Members</a>
+<div class="submenu">
+	<ul>
+	<li><a href="memberbenefit.html">Membership Benefits</a></li>
+    <li><a href="becomemember.html">Become A Member</a></li>
+    <li><a href="membersonly.html">Members Only</a></li>    
+	</ul>
+</div>
+<a class="menuitem submenuheader" href="Pages/sponsor.html">Sponsors</a>
+<div class="submenu">
+	<ul>
+	<li><a href="sponsorlist.html">List Of Sponsors</a></li>
+	<li><a href="pyp.html">Pujari Yellow Pages</a></li>
+	</ul>
+<!-- <img src="http://i27.tinypic.com/sy7295.gif" style="margin: 10px 5px" />
+-->
+</div>
+<a class="menuitem submenuheader" href="Pages/publication.html">Publication</a>
+<div class="submenu">
+	<ul><li><a href="anjali.html"> Anjali</a></li>
+	</ul>
+</div>
+<a class="menuitem submenuheader" href="Pages/fasttrackinfo.html">Fast Track Info.</a>
+<div class="submenu">
+	<ul>
+	<li><a href="usefullinks.html">Important Links</a></li>
+	<li><a href="banglaweblinks.html">Amaar Bangla</a></li>
+    <li><a href="news.html">Go Global</a></li>
+    </ul>
+</div>
+<a class="menuitem submenuheader" href="Pages/aboutus.html">About Us</a>
+<div class="submenu">
+	<ul>
+	<li><a href="mission.html">Mission</a></li>
+	<li><a href="bod.html">Board Of Directors</a></li>
+	<li><a href="ec.html">Executive Committee</a></li>
+    <li><a href="websitecredits.html" class="style15 style11">Website Credits</a></li>
+
+    <li><a href="history.html" class="style15 style11">History</a></li>
+    <li><a href="articleofinc.html">Article Of Incorporation</a></li>
+    <li><a href="bylaws.html">By Laws</a></li>
+    </ul>
+</div>
+
+</div>
+  </div>
+    
+  <div id="mainContent">
+    <h1 align="left">&nbsp;</h1>
+    <p align="center" class="style21"><span class="style14">Important Links</span></p>
+    <p align="justify" class="style21"><span class="style14">Pujari's</span> utmost attempt is to provide best-in-class information that help reducing research time to meet most common needs. Find information related to nationwide shools and universities with their comparisons, travel, cost of living, tax, credit report, finance, buying properties in India, sharing your responsibilities, and elder-care.</p>
+    <div id="usefullinks">
+      <table border="1" cellpadding="4" cellspacing="0" bordercolor="#723312">
+        <tr>
+          <td width="638" colspan="2" valign="top"><p align="center" class="style20"><strong>Some of the Most Important Information Links to Start </strong>With</p></td>
+        </tr>
+        <tr>
+          <td width="303" valign="top"><p><a href="http://www.ssa.gov/" target="_blank">Social Security</a></p></td>
+          <td width="335" valign="top"><p>Social Security Online</p></td>
+        </tr>
+        <tr>
+          <td width="303" valign="top"><p><a href="http://www.dmv.org/" target="_blank">Department of Motor Vehicle (DMV)</a></p></td>
+          <td width="335" valign="top"><p>Nationwide <strong>Department of Motor Vehicle Guide</strong>.    Information on Drivers License, Car Registration, <strong>...</strong></p></td>
+        </tr>
+        <tr>
+          <td width="303" valign="top"><p><a href="http://select.apartmentguide.com/" target="_blank">Apartment Guide</a></p></td>
+          <td width="335" rowspan="3" valign="top"><p>Search Nationwide Local Apartments by Area, Price,    Floor-plan and More!</p></td>
+        </tr>
+        <tr>
+          <td width="303" valign="top"><p><a href="http://www.apartmentsearch.com/" target="_blank">Apartment Search</a></p></td>
+        </tr>
+        <tr>
+          <td width="303" valign="top"><p><a href="http://www.apartments.com/" target="_blank">Apartment Finding</a></p></td>
+        </tr>
+        <tr>
+          <td width="303" valign="top"><p><a href="http://banking.about.com/od/loans/a/buildcredit.htm" target="_blank">Build Credit</a></p></td>
+          <td width="335" valign="top"><p>Build Credit - How to Build Credit - Why it is Important    to Build Credit in US</p></td>
+        </tr>
+        <tr>
+          <td width="303" valign="top"><p><a href="http://www.indianembassy.org/newsite/consultates.asp" target="_blank">Indian Embassy &amp; Consulate</a></p></td>
+          <td width="335" valign="top"><p>Indian Consulates in US</p></td>
+        </tr>
+        <tr>
+          <td width="303" valign="top"><p><a href="http://www.usimmigrationsupport.org/" target="_blank">US Immigration</a></p></td>
+          <td width="335" valign="top"><p>United States Immigration Support: Work Visa, Green Card,    Citizenship…</p></td>
+        </tr>
+        <tr>
+          <td width="638" colspan="2" valign="top"><p align="center" class="style20"><strong>Schools &amp; Universities</strong></p></td>
+        </tr>
+        <tr>
+          <td width="303" valign="top"><p><a href="http://www.greatschools.net/" target="_blank">Compare Schools, US</a></p></td>
+          <td width="335" valign="top"><p>Elementary, middle and high school information for public,    private and charter schools nationwide. Search and compare schools; view test    scores and class <strong>...</strong></p></td>
+        </tr>
+        <tr>
+          <td width="303" valign="top"><p><a href="http://www.usuniversities.com/search.cfm" target="_blank">US Universities</a></p></td>
+          <td width="335" valign="top"><p>Complete guide to <strong>US</strong> Colleges &amp; <strong>Universities</strong>.    Search for state-owned and private-owned <strong>universities</strong> and colleges    including their respective program <strong>...</strong></p></td>
+        </tr>
+        <tr>
+          <td width="303" valign="top"><p><a href="http://www.utexas.edu/world/univ/alpha/" target="_blank">Accreditated US Universities</a></p></td>
+          <td width="335" valign="top"><p>A list of regionally-accredited <strong>US universities</strong> organized by state</p></td>
+        </tr>
+        <tr>
+          <td width="638" colspan="2" valign="top"><p align="center" class="style20"><strong>Travel</strong></p></td>
+        </tr>
+        <tr>
+          <td width="638" colspan="2" valign="top"><p><a href="http://www.hotwire.com/" target="_blank">http://www.hotwire.com/</a></p></td>
+        </tr>
+        <tr>
+          <td width="638" colspan="2" valign="top"><p><a href="http://www.jetairways.com" target="_blank">http://www.jetairways.com</a></p></td>
+        </tr>
+        <tr>
+          <td width="638" colspan="2" valign="top"><p><a href="http://us.makemytrip.com/" target="_blank">http://us.makemytrip.com/</a></p></td>
+        </tr>
+        <tr>
+          <td width="638" colspan="2" valign="top"><p><a href="http://www.weflyhome.com/" target="_blank">http://www.weflyhome.com/</a></p></td>
+        </tr>
+        <tr>
+          <td width="638" colspan="2" valign="top"><p><a href="http://www.globetravels.com/" target="_blank">http://www.globetravels.com/</a></p></td>
+        </tr>
+        <tr>
+          <td width="638" colspan="2" valign="top"><p><a href="http://www.tripadvisor.com/Flights-g293860-India-Cheap_Discount_Airfares.html" target="_blank">http://www.tripadvisor.com</a></p></td>
+        </tr>
+        <tr>
+          <td width="638" colspan="2" valign="top"><p><a href="http://www.priceline.com/" target="_blank">http://www.priceline.com/</a></p></td>
+        </tr>
+        <tr>
+          <td width="638" colspan="2" valign="top"><p><a href="http://www.yatra.com/" target="_blank">http://www.yatra.com/</a></p></td>
+        </tr>
+        <tr>
+          <td width="638" colspan="2" valign="top"><p><a href="http://www.continental.com/web/en-US/default.aspx" target="_blank">http://www.continental.com/</a></p></td>
+        </tr>
+        <tr>
+          <td width="638" colspan="2" valign="top"><p><a href="http://www.aa.com/index_us.jhtml" target="_blank">http://www.aa.com/</a></p></td>
+        </tr>
+        <tr>
+          <td width="638" colspan="2" valign="top"><p><a href="http://www.delta.com/home/index.jsp" target="_blank">http://www.delta.com/</a></p></td>
+        </tr>
+        <tr>
+          <td width="638" colspan="2" valign="top"><p align="center" class="style20"><strong>Cost of Living, Tax, Credit Report &amp; Finance</strong></p></td>
+        </tr>
+        <tr>
+          <td width="303" valign="top"><p><a href="http://www.bankrate.com/brm/movecalc.asp" target="_blank">US Cities Cost Of Living</a></p></td>
+          <td width="335" valign="top"><p>Use this calculator to compare the <strong>cost of living</strong> between <strong>U.S.</strong> cities. Select the city you're in and the city you're    moving to.</p></td>
+        </tr>
+        <tr>
+          <td width="303" valign="top"><p><a href="http://www.bestplaces.net/city/" target="_blank">Compare US Cities</a></p></td>
+          <td width="335" valign="top"><p>Compare Cities: climate, education, transportation, crime,    religion, cost of living…</p></td>
+        </tr>
+        <tr>
+          <td width="303" valign="top"><p><a href="http://www.irs.gov/" target="_blank">US Federal Tax</a></p></td>
+          <td width="335" valign="top"><p>Information on Federal Tax</p></td>
+        </tr>
+        <tr>
+          <td width="303" valign="top"><p><a href="http://www.dor.ga.gov/" target="_blank">Georgia State Tax</a></p></td>
+          <td width="335" valign="top"><p>Information on Georgia State Tax</p></td>
+        </tr>
+        <tr>
+          <td width="303" valign="top"><p><a href="http://www.experian.com/" target="_blank">Experian</a></p></td>
+          <td width="335" rowspan="3" valign="middle"><p>Credit score and report</p></td>
+        </tr>
+        <tr>
+          <td width="303" valign="top"><p><a href="http://www.equifax.com/home/" target="_blank">Equifax</a></p></td>
+        </tr>
+        <tr>
+          <td width="303" valign="top"><p><a href="http://www.transunion.com/" target="_blank">Transunion</a></p></td>
+        </tr>
+        <tr>
+          <td width="303" valign="top"><p><a href="http://www.forbes.com/finance/">Personal Finance</a></p></td>
+          <td width="335" valign="top"><p>Personal Finance - Get financial advice and information</p></td>
+        </tr>
+        <tr>
+          <td width="303" valign="top"><p><a href="http://money.cnn.com/magazines/moneymag/" target="_blank">CNN Money</a></p>
+          <p>&nbsp;</p></td>
+          <td width="335" valign="top"><p>A step by step guide to gaining control of your financial    life</p></td>
+        </tr>
+        <tr>
+          <td width="303" valign="top"><p><a href="http://articles.moneycentral.msn.com/" target="_blank">MSN Money</a></p></td>
+          <td width="335" valign="top"><p>The best financial advice ever</p></td>
+        </tr>
+        <tr>
+          <td width="303" valign="top"><p><a href="http://www.free-financial-advice.net/" target="_blank">Free Financial Advice</a></p></td>
+          <td width="335" valign="top"><p>Ways to Save Money, Make Money and More…..</p></td>
+        </tr>
+        <tr>
+          <td width="638" colspan="2" valign="top"><p align="center" class="style20"><strong>Buy Properties    in India</strong></p></td>
+        </tr>
+        <tr>
+          <td width="638" colspan="2" valign="top"><p><a href="http://www.unitechgroup.com/projects/" target="_blank">Unitech</a></p></td>
+        </tr>
+        <tr>
+          <td width="638" colspan="2" valign="top"><p><a href="http://www.dlf.in/wps/portal/" target="_blank">DLF</a></p></td>
+        </tr>
+        <tr>
+          <td width="638" colspan="2" valign="top"><p><a href="http://www.axiomestates.com/sales.htm" target="_blank">Axiom Estates</a></p></td>
+        </tr>
+        <tr>
+          <td width="638" colspan="2" valign="top"><p><a href="http://www.99acres.com/" target="_blank">99 Acres</a></p></td>
+        </tr>
+        <tr>
+          <td width="638" colspan="2" valign="top"><p><a href="http://www.magicbricks.com/" target="_blank">Magic Bricks</a></p></td>
+        </tr>
+        <tr>
+          <td width="638" colspan="2" valign="top"><p align="center" class="style20"><strong>Share    your responsibilities in India</strong></p></td>
+        </tr>
+        <tr>
+          <td width="303" valign="top"><p><a href="http://www.saharacarehouse.com/" target="_blank">Sahara Care House</a></p></td>
+          <td width="335" valign="top"><p>NRI Services Facilitator: For anything that needs to be    done in India like healthcare services, concierge services for NRI (Non    Resident Indians)around the <strong>...</strong></p></td>
+        </tr>
+        <tr>
+          <td width="638" colspan="2" valign="top"><p align="center" class="style20"><strong>Retirement    Living &amp; Eldercare Service,     US</strong></p></td>
+        </tr>
+        <tr>
+          <td width="303" valign="top"><p><a href="http://www.retirementliving.com/RLtaxes.html" target="_blank">Retirement Living</a></p></td>
+          <td width="335" valign="top"><p>Retirement living information center</p></td>
+        </tr>
+        <tr>
+          <td width="303" valign="top"><p><a href="http://www.eldercare.gov/" target="_blank">Elder Care</a></p></td>
+          <td width="335" valign="top"><p>A public service    of the U.S. Administration on Aging. The Eldercare Locator is the first step    to finding resources for older adults in any U.S. community.</p></td>
+        </tr>
+      </table>
+    </div>
+    <p align="justify" class="style21">&nbsp;</p>
+  </div> 
+    
+    
+  <!-- This clearing element should immediately follow the #mainContent div in order to force the #container div to contain all child floats -->
+  <br class="clearfloat" />
+  <div id="footer">
+    <p>|&nbsp;<a href="index.html"> Home&nbsp;</a> |&nbsp; <a href="nextevent.html">Next Event</a>&nbsp; |&nbsp; <a href="sponsorlist.html">Sponsors&nbsp;</a> |<a href="logopage.html">&nbsp;Pujari Logo </a>|&nbsp; <a href="sitemap.html">Site Map&nbsp;</a> |</p>
+  </div>
+<!-- end #container --></div>
+
+</body>
+</html>

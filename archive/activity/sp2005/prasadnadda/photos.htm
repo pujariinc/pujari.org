@@ -1,0 +1,82 @@
+
+
+<head>
+<meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+
+<link rel="stylesheet" type="text/css" href="../stylesheet.css">
+</head>
+
+<SCRIPT LANGUAGE="JavaScript">
+var current = 0;
+
+function next(){ // forward one image
+if(document.formname.slide[current+1]){
+document.images.show.src = document.formname.slide[current+1].value;
+document.formname.slide.selectedIndex = ++current;}
+else{first();}}
+
+function previous(){ // back on image
+if((current-1) >= 0){
+document.images.show.src = document.formname.slide[current-1].value;
+document.formname.slide.selectedIndex= --current;}
+else{last();}}
+
+function first(){ // jump to first image
+current=0;
+document.images.show.src = document.formname.slide[0].value;
+document.formname.slide.selectedIndex=0;}
+
+function last(){ // this is jump to last image
+current=(document.formname.slide.length-1);
+document.images.show.src = document.formname.slide[current].value;
+document.formname.slide.selectedIndex=current;}
+
+function ap(text){ // this controls the auto-play and/or auto-stop
+document.formname.slidebutton.value=(text == "Stop") ? "Start" : "Stop";
+rotate();}
+
+function change(){ // this is for the pulldown menu
+current=document.formname.slide.selectedIndex;
+document.images.show.src = document.formname.slide[current].value;}
+
+function rotate() {
+if (document.formname.slidebutton.value == "Stop") {
+current = (current == document.formname.slide.length-1) ? 0 : current+1;
+document.images.show.src = document.formname.slide[current].value;
+document.formname.slide.selectedIndex = current;
+window.setTimeout("rotate()", 5000);}}
+//  End --></SCRIPT>
+
+
+<form name="formname">
+<table cellspacing="1" cellpadding="4" bgcolor="#000000">
+  <tr>
+    <td align="center" bgcolor="silver"><b>Prasad and Adda</b></td>
+  </tr>
+  <tr>
+    <td align="center" bgcolor="#C3DAF9" width="500" height="400"><img height="400" src="1.jpg" name="show"></td>
+  </tr>
+  <tr>
+    <td align="center" bgcolor="silver"><select name="slide" onchange="change();" size="1">
+        <option value="1.jpg" selected="1">Photo 1</option>
+        <option value="2.jpg">Photo 2</option>
+        <option value="3.jpg" >Photo 3</option>
+        <option value="4.jpg">Photo 4</option>
+		<option value="5.jpg">Photo 5</option>
+		<option value="6.jpg">Photo 6</option>
+		<option value="7.jpg">Photo 7</option>
+        <option value="8.jpg">Photo 8</option>
+        <option value="9.jpg">Photo 9</option>    
+      </select></td>
+  </tr>
+  <tr>
+    <td align="center" bgcolor="#cccccc"><input type="button" onclick="first();" value="|&lt;&lt;" title="Jump to beginning" style="border-style: ridge; border-width: 5">
+      <input type="button" onclick="previous();" value="&lt;&lt;" title="Last Picture" style="border-style: ridge; border-width: 5">
+      <input type="button" name="slidebutton" onclick="ap(this.value);" value="Start" title="AutoPlay" style="border-style: ridge; border-width: 5">
+      <input type="button" onclick="next();" value="&gt;&gt;" title="Next Picture" style="border-style: ridge; border-width: 5">
+      <input type="button" onclick="last();" value="&gt;&gt;|" title="Jump to end" style="border-style: ridge; border-width: 5"></td>
+  </tr>
+</table>
+</form>
+
