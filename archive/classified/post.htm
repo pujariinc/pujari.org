@@ -11,7 +11,19 @@
 
 <h4>Fill out the form to post your own classified. We expect that all
 information is correct and appropriate.</h4>
-<form method="POST" action="http://www.pujari-atlanta.org/cgi-bin/classified.pl" style="float: left" onsubmit="return">
+<!--webbot BOT="GeneratedScript" PREVIEW=" " startspan --><script Language="JavaScript" Type="text/javascript"><!--
+function FrontPage_Form1_Validator(theForm)
+{
+
+  if (theForm.realname.value == "")
+  {
+    alert("Please enter a value for the \"realname\" field.");
+    theForm.realname.focus();
+    return (false);
+  }
+  return (true);
+}
+//--></script><!--webbot BOT="GeneratedScript" endspan --><form method="POST" action="http://www.pujari-atlanta.org/cgi-bin/classified.pl" style="float: left" onsubmit="return FrontPage_Form1_Validator(this)" language="JavaScript" name="FrontPage_Form1">
   <table border="0" cellpadding="2" cellspacing="0">
     <tr>
       <td>Name:</td>
